@@ -8,8 +8,8 @@
     <title>Yellow Door</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome icons (free version)--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
@@ -61,6 +61,7 @@ video{
   width: 100%;
   justify-content: center;
 }
+.content>div>.divider-custom-line{ box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF}
  </style>
 
 <video autoplay muted loop id="myVideo">
@@ -78,7 +79,7 @@ video{
         <div class="divider-custom-line"></div>
     </div>
     <!-- Masthead Subheading-->
-    <p class="masthead-subheading font-weight-light mb-0">Art Education</p>
+    <p style="font-size:2.0rem" class="masthead-subheading font-weight-light mb-0">Art Education</p>
 </div> 
 
     <!-- Welcome Section-->
@@ -137,7 +138,7 @@ video{
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" style="width:100%; height:150px;" src="assets/img/about_me_pexels-sergio-souza-1998479.jpg" alt=""/>
+              <img loading="lazy" class="img-fluid" style="width:100%; height:150px;" src="assets/img/about_me_pexels-sergio-souza-1998479.jpg" alt=""/>
             </div>
             <div class="portfolio-caption" data-toggle="modal" data-target="#portfolioModal1">
               <div class="portfolio-caption-heading">ABOUT ME</div>
@@ -152,7 +153,7 @@ video{
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" style="width:100%; height:150px;" src="assets/img/classes_pexels-zaksheuskaya-1561020-min.jpg" alt=""/>
+              <img loading="lazy" class="img-fluid" style="width:100%; height:150px;" src="assets/img/classes_pexels-zaksheuskaya-1561020-min.jpg" alt=""/>
             </div>
             <div class="portfolio-caption" data-toggle="modal" data-target="#portfolioModal2">
               <div class="portfolio-caption-heading">CLASSES</div>
@@ -167,7 +168,7 @@ video{
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" style="width:100%; height:150px;" src="assets/img/policies_pexels-steve-johnson-1704120.jpg" alt=""/>
+              <img loading="lazy" class="img-fluid" style="width:100%; height:150px;" src="assets/img/policies_pexels-steve-johnson-1704120.jpg" alt=""/>
             </div>
             <div class="portfolio-caption" data-toggle="modal" data-target="#portfolioModal3">
               <div class="portfolio-caption-heading">POLICIES</div>
@@ -182,7 +183,7 @@ video{
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" style="width:100%; height:150px;" src="assets/img/gallery_pexels-anni-roenkae-3109850-min.jpg" alt=""/>
+              <img loading="lazy" class="img-fluid" style="width:100%; height:150px;" src="assets/img/gallery_pexels-anni-roenkae-3109850-min.jpg" alt=""/>
             </div>
             <div class="portfolio-caption" data-toggle="modal" data-target="#portfolioModal4">
               <div class="portfolio-caption-heading">GALLERY</div>
@@ -195,21 +196,21 @@ video{
     <style>
       .portfolio-caption {
         text-align: center;
-        border-radius: 100px;
+        border-radius: 0% 0% 100% 100%;
         color: #ffc107;
       }
 
       .portfolio-caption:hover {
         cursor: pointer;
-        background-color: rgba(44, 62, 80, 0.5);
+        background-color: #1a252f !important;
       }
 
       .portfolio-caption:hover > * {
-        color: white;
+        color: #fff; /* Hover Yellow */
       }
 
       .portfolio-caption:hover > .portfolio-caption-heading {
-        color: #fff
+        color: #fff;
       }
     </style>
     <!-- Footer-->
@@ -222,9 +223,6 @@ video{
             <p class="lead mb-0">
               Email: katew4188@gmail.com
                             <br/>240-723-5160
-                        
-                        
-                        
             </p>
           </div>
           <!-- Footer Social Icons-->
@@ -292,7 +290,7 @@ video{
                   <p class="mb-5">My motivation and desire for teaching art stems from my own experience with art
 education. From kindergarten to graduation, I felt I required more attention, more
 information and more freedom of expression.</p>
-                  <img src="./assets/img/about_me1.jpg" alt="A Picture Of Me." style="width: 100%; height: auto;">
+                  <img  loading="lazy" src="./assets/img/about_me1.jpg" alt="A Picture Of Me." style="width: 100%; height: auto;">
                   <p class="mb-5">I was born and raised here in Bethesda, Maryland, in the same house my father grew
 up in! I now live just down the road, in a house I share with two of my close friends. I
 attended Bradley Hills Elementary School, Pyle Middle School, and graduated from Walt
@@ -303,17 +301,13 @@ love and appreciation for art.</p>
                     I graduated from the University of Maryland, College Park, with a Bachelor’s Degree in
 Studio Art and Art History in 2018.<br>
                     I now work full-time at Equinox Bethesda, while I continue to create art on the side.
-                                    
                                         <br>
-                    <img src="./assets/img/about_me2.jpg" alt="My Art Studio" style="width: 100%; height: auto;">
+                    <img  loading="lazy" src="./assets/img/about_me2.jpg" alt="My Art Studio" style="width: 100%; height: auto;">
                     <br>
                     <br>
                     <button class="btn btn-primary" data-dismiss="modal">
                       <i class="fas fa-times fa-fw"></i>
-                      Close Window
-                                    
-                                        
-                                        
+                      Close Window 
                     </button>
                 </div>
               </div>
@@ -351,9 +345,7 @@ Studio Art and Art History in 2018.<br>
                   <p class="mb-5">
                     I teach children and young adults, ages 4 - 19
                                     <br>Classes are held once a week for 8 week sessions, $25 per class
-                                    
-                                    
-                                    
+                                           
                   </p>
                   <p class="mb-5">
                     <u>Elementary and middle school students</u>
@@ -367,8 +359,6 @@ While other projects may have specific directions to follow they will still allo
 think out of the box and create freely. Projects are designed based on child
 development and inspired by art history. The focus of these classes is all about the
 process, which is how we learn!
-                                    
-                                    
                   </p>
                   <p class="mb-5">
                     <u>High school and advanced students</u>
@@ -379,18 +369,13 @@ Students have the opportunity to receive more attention and feedback than they w
 in school, better preparing them for a college level art course. I specialize in portfolio
 planning, artist statements, figure drawing, anatomy, color theory, art theory and art
 history.
-                                    
-                                    
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">ENROLL NOW</button>
                   <br>
                   <br>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                                    
-                                    
-                                    
+                    Close Window     
                   </button>
                 </div>
               </div>
@@ -447,10 +432,7 @@ releases during the school year. Weather will be played by ear. Make-up sessions
 request.</p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
-                    Close Window
-                                    
-                                    
-                                    
+                    Close Window 
                   </button>
                 </div>
               </div>
@@ -486,17 +468,16 @@ request.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt=""/>-->
                   <!-- Portfolio Modal - Text-->
                   <p class="mb-5">
-                    Comming Soon <br>
-                    <br>Todo:: Insert sample projects with level of development and a few examples of the benefits of specific projects.
-                                    
-                                    
+                    <h3>Project #1: <small>Negative Space and Spelling Process Art - All Ages</small></h3> 
+                    <br>
+                    <br>
+                    <img src="./assets/img/image0.jpeg" loading="lazy" alt="A Picture Of My Art." style="width: 100%; height: auto;">
+                    <img src="./assets/img/image1.jpeg" loading="lazy" alt="A Picture Of My Art." style="width: 100%; height: auto;">
+                    <img src="./assets/img/image2.jpeg" loading="lazy" alt="A Picture Of My Art." style="width: 100%; height: auto;">
                   </p>
                   <button class="btn btn-primary" data-dismiss="modal">
                     <i class="fas fa-times fa-fw"></i>
                     Close Window
-                                    
-                                    
-                                    
                   </button>
                 </div>
               </div>
