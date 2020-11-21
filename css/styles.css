@@ -204,6 +204,7 @@ img {
 svg {
   overflow: hidden;
   vertical-align: middle;
+  display: inline-block;
 }
 
 table {
@@ -225,6 +226,7 @@ th {
 label {
   display: inline-block;
   margin-bottom: 0.5rem;
+  min-width: 100px;
 }
 
 button {
@@ -6322,7 +6324,7 @@ button.bg-dark:focus {
 }
 
 .d-block {
-  display: block !important;
+  display: inline-block !important;
 }
 
 .d-table {
@@ -6359,7 +6361,7 @@ button.bg-dark:focus {
   }
 
   .d-sm-block {
-    display: block !important;
+    display: inline-block !important;
   }
 
   .d-sm-table {
